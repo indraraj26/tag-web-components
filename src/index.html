@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>body {font-family: 'Lato', sans-serif;}</style>
+    <script type="module" src="/build/tag.esm.js"></script>
+    <script nomodule src="/build/tag.js"></script>
+  </head>
+  <body style="background-color: #f5f5f5;">
+    <div style="padding-bottom:30px">
+      Tag Web Components @Indraraj26
+    </div>
+    <div style="padding-bottom: 10px;">
+      <tag-component name="Primary Tag" close-icon="true" type="rounded" style="--tag-close-icon-color: red;
+      --tag-background-color: #5680F9
+      ">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" type="rounded" style="
+      --tag-close-icon-color: red;
+      --tag-background-color: #4C36DD;
+      --tag-text-color: #ececec">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" type="rounded" style="--tag-close-icon-color: red;
+      --tag-background-color: #ff76f1">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" type="rounded" style="--tag-close-icon-color: red;
+      --tag-background-color: #7df3a4">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+    </div>
+    <div style="padding-bottom: 30px;">
+      <tag-component name="Primary Tag" close-icon="true" style="--tag-close-icon-color: red;
+      --tag-background-color: #5680F9
+      ">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" style="
+      --tag-close-icon-color: red;
+      --tag-background-color: #4C36DD;
+      --tag-text-color: #ececec">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" style="--tag-close-icon-color: red;
+      --tag-background-color: #ff76f1">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+      <tag-component name="Primary Tag" close-icon="true" style="--tag-close-icon-color: red;
+      --tag-background-color: #7df3a4">
+         <!--  <span slot="item-start">Icon1</span>
+          <span slot="item-end">Icon1</span> -->
+      </tag-component>
+    </div>
+    <div style="padding-bottom:50px">
+    <div>
+      @Props
+    </div>
+    <ul>
+      <li>name - {String} - tag name</li>
+      <li>close-icon - {Boolean} - show/hide close icon</li>
+      <li>type - {String} - default: square, rounded</li>
+    </ul>
+    <div>
+      @Event
+    </div>
+    <ul>
+      <li>close - {EventListener} - give the tag element</li>
+    </ul>
+    <div>
+      @style properties
+    </div>
+    <ul>
+      <li>
+        --tag-close-icon-color: red
+      </li>
+      <li>
+        --tag-background-color: #5680F9
+      </li>
+      <li>
+        --tag-text-color: #ececec
+      </li>
+       <li>
+        --tag-font-size: 14px
+      </li>
+    </ul>
+    <div>@Usage</div>
+      <xmp style="  background: #ffffff;
+      padding: 10px;
+      box-shadow: 0px 1px 3px rgb(0 0 0 / 10%)">
+<tag-component name="Primary Tag" close-icon="true" type="rounded"
+         style="--tag-close-icon-color: red;
+                --tag-background-color: #4C36DD;
+                --tag-text-color: #ececec">
+
+             <!--  <span slot="item-start">Icon1</span>
+              <span slot="item-end">Icon2</span> -->
+
+</tag-component>
+<code>
+  const tagComponentList = document.querySelectorAll('tag-component');
+  for(let tagComponent of tagComponentList) {
+    tagComponent.addEventListener('close', event => {
+     console.log('event in js', event.target.remove())
+   })
+  }
+</code>
+      </xmp>
+    </div>
+
+    <script>
+      const tagComponentList = document.querySelectorAll('tag-component');
+      for(let tagComponent of tagComponentList) {
+        tagComponent.addEventListener('close', event => {
+         console.log('event in js', event.target.remove())
+       })
+      }
+      </script>
+  </body>
+</html>

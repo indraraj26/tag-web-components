@@ -1,0 +1,24 @@
+.tag-container {
+  box-shadow: 0 0px 6px rgb(0 0 0 / 30%);
+  display: inline-block;
+  padding: 5px 5px 5px 10px;
+  border-radius: 4px;
+  color: var(--tag-text-color, #000);
+  font-size: var(--tag-font-size, 14px);
+  background-color: var(--tag-background-color, #fff);
+}
+
+.tag-close-icon {
+  cursor: pointer;
+  padding: 0 5px;
+  display: inline-block;
+  transition: 0.5s color;
+}
+
+.tag-close-icon:hover {
+  color: var(--tag-close-icon-color, red);
+}
+
+.tag-close-icon:active {
+  transform: translateY(1px);
+}
