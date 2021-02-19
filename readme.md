@@ -3,6 +3,8 @@
 ## @Screenshot
 <img src="https://github.com/indraraj26/tag-web-components/blob/main/assets/screenshot.PNG?raw=true" alt="tag-web-components" />
 
+# [Demo](https://indraraj26.github.io/tag-web-components/index.html)
+
 ## @Props
 - name - {String} - tag name
 - close-icon - {Boolean} - show/hide close icon
