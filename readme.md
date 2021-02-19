@@ -1,5 +1,8 @@
-  # Tag Web Components @Indraraj26
+# Tag Web Components @Indraraj26
     
+## @Screenshot
+<img src="https://github.com/indraraj26/tag-web-components/blob/main/assets/screenshot.PNG?raw=true" alt="tag-web-components" />
+
 ## @Props
 - name - {String} - tag name
 - close-icon - {Boolean} - show/hide close icon
